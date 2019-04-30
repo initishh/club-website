@@ -65,7 +65,7 @@ export default () => {
 
       <hr style={hrStyle} />
 
-      <div className="container">
+      <div class="container">
         <Typography
           component="h2"
           align="center"

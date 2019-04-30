@@ -28,7 +28,7 @@ const NavigationBar = () => (
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="navbar-dark ml-auto overlay-content">
+        <Nav className="ml-auto">
           <Nav.Link href="/projects" className="navbarStyle" style={textStyle}>
             PROJECTS
           </Nav.Link>
