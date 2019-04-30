@@ -3,15 +3,24 @@ import NavigationBar from "../components/Navigationbar";
 import Typography from "@material-ui/core/Typography";
 import Grid from "../components/homepage/grid";
 import WhatWeDo from "../components/homepage/whatwedo";
+import source from "../../static/hero.mp4";
 
-const styles = {
-  width: `100%`
+const containerStyles = {
+  display: `grid`,
+  justifyContent: `center`
+};
+
+const videoStyles = {
+  maxWidth: `100%`,
+  maxHeight: `75vh`,
+  marginTop: `60px`
 };
 
 const headingText = {
-  fontFamily: `Courier New`,
-  fontSize: `36px`,
-  marginTop: `5%`
+  fontFamily: `Montserrat`,
+  fontSize: `40px`,
+  color: `#6d48e5`,
+  marginTop: `-10px`
 };
 
 const hrStyle = {
@@ -22,8 +31,8 @@ const hrStyle = {
 };
 
 const innerPara = {
-  fontSize: `16px`,
-  fontFamily: `Lato`,
+  fontSize: `1.125rem`,
+  fontFamily: `Montserrat`,
   marginBottom: `5%`,
   lineHeight: `2`
 };
@@ -36,21 +45,30 @@ export default () => {
   return (
     <div>
       <NavigationBar />
-      <img src="index.jpg" style={styles} />
-      <Typography
-        component="h2"
-        align="center"
-        variant="h5"
-        gutterBottom
-        style={headingText}
-      >
-        We are Zairza
-      </Typography>
-      <hr style={hrStyle} />
-      <div class="container">
+
+      <div style={containerStyles}>
+        <video style={videoStyles} autoPlay loop muted src={source} />
+      </div>
+
+      <div className="container">
         <Typography
           component="h2"
-          align="justify"
+          align="center"
+          variant="h5"
+          style={headingText}
+        >
+          WONDER <br />
+          THINK <br />
+          CREATE <br />
+        </Typography>
+      </div>
+
+      <hr style={hrStyle} />
+
+      <div className="container">
+        <Typography
+          component="h2"
+          align="center"
           variant="h5"
           gutterBottom
           style={innerPara}
@@ -62,6 +80,7 @@ export default () => {
           our own.
         </Typography>
       </div>
+
       <div className="container-fluid" style={section}>
         <Grid />
       </div>

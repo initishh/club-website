@@ -20,13 +20,13 @@ import Typography from "@material-ui/core/Typography";
 const innerTypo = {
   color: `grey`,
   fontSize: `16px`,
-  fontFamily: "Lato",
+  fontFamily: "Roboto",
   overflowY: "hidden",
   height: "92px"
 };
 
 const outerTypo = {
-  fontFamily: "Lato",
+  fontFamily: "Roboto",
   fontSize: `18px`,
   overflowY: "hidden",
   height: "62px"
@@ -50,7 +50,7 @@ const styles = theme => ({
     color: "white",
     borderRadius: "20px",
     fontSize: "14px",
-    fontFamily: "Lato",
+    fontFamily: "Roboto",
     marginBottom: "12px"
   },
   thirdButton: {

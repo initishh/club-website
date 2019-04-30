@@ -6,9 +6,10 @@ const Sitemetadata = () => {
     <Helmet>
       <html lang="en" />
       <link
-        href="https://fonts.googleapis.com/css?family=Lato"
+        href="https://fonts.googleapis.com/css?family=Montserrat|Roboto"
         rel="stylesheet"
       />
+
       <link
         rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
