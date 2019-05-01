@@ -16,7 +16,7 @@ const logoStyle = {
   marginLeft: `30px`,
   fontFamily: `Montserrat`,
   fontWeight: `bold`,
-  fontSize: `3em`
+  fontSize: `2em`
 };
 
 const NavigationBar = () => (

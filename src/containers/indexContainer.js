@@ -4,6 +4,7 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "../components/homepage/grid";
 import WhatWeDo from "../components/homepage/whatwedo";
 import source from "../../static/hero.mp4";
+import MediaQuery from "react-responsive";
 
 const containerStyles = {
   display: `grid`,
@@ -18,9 +19,9 @@ const videoStyles = {
 
 const headingText = {
   fontFamily: `Montserrat`,
-  fontSize: `40px`,
-  color: `#6d48e5`,
-  marginTop: `-10px`
+  fontSize: `2em`,
+  wordSpacing: `1em`,
+  color: `#6d48e5`
 };
 
 const hrStyle = {
@@ -57,9 +58,15 @@ export default () => {
           variant="h5"
           style={headingText}
         >
-          WONDER <br />
-          THINK <br />
-          CREATE <br />
+          <MediaQuery query="(min-device-width: 801px)">
+            WONDER THINK CREATE
+          </MediaQuery>
+
+          <MediaQuery query="(max-device-width: 800px)">
+            WONDER <br />
+            THINK <br />
+            CREATE <br />
+          </MediaQuery>
         </Typography>
       </div>
 
