@@ -18,7 +18,7 @@ const videoStyles = {
 };
 
 const headingText = {
-  fontFamily: `Montserrat`,
+  fontFamily: `Roboto`,
   fontSize: `2em`,
   wordSpacing: `1em`,
   color: `#6d48e5`
@@ -33,7 +33,7 @@ const hrStyle = {
 
 const innerPara = {
   fontSize: `1.125rem`,
-  fontFamily: `Montserrat`,
+  fontFamily: `Roboto`,
   marginBottom: `5%`,
   lineHeight: `2`
 };
